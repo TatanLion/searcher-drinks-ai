@@ -16,7 +16,7 @@ export type RecipieSliceType = {
 }
 
 // NOTE Cuando se usa informacion de un slice en otro, toca definir el tipe e indicar cual se usara, aqui un ejemplo, esto se conoce como un nested slice
-export const RecipeSlice : StateCreator<RecipieSliceType & FavoritesliceType, [], [], RecipieSliceType> = (set, get , api) => ({
+export const RecipeSlice : StateCreator<RecipieSliceType & FavoritesliceType, [], [], RecipieSliceType> = (set) => ({
   categories: { drinks: [] },
   drinks: { drinks: [] },
   selectedRecipe: {} as Recipe,

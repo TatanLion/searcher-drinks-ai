@@ -13,7 +13,7 @@ export type NotificationSliceType = {
     hideNotification: () => void
 }
 
-export const NotificationSlice: StateCreator<NotificationSliceType & FavoritesliceType, [], [], NotificationSliceType> = (set, get, api) => ({
+export const NotificationSlice: StateCreator<NotificationSliceType & FavoritesliceType, [], [], NotificationSliceType> = (set, get) => ({
     notification: {
         text: '',
         error: false,
